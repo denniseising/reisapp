@@ -1,18 +1,27 @@
 <% if signed_in? %>
-<div class="row">
-  <aside class="span4">
-    <section>
-      <%= render 'shared/user_info' %>
-    </section>
-    <section>
-      <%= render 'shared/micropost_form' %>
-    </section>
-  </aside>
-  <div class="span8">
-    <h3>Micropost Feed</h3>
+
+<div id="vmap" style="width: 600px; height: 400px;"></div>
+ 
+<script>
+jQuery('#vmap').vectorMap({
+    map: 'world_en',
+    backgroundColor: null,
+    color: '#ffffff',
+    hoverOpacity: 0.7,
+    selectedColor: '#666666',
+    enableZoom: false,
+    showTooltip: true,
+    values: sample_data,
+    scaleColors: ['#C8EEFF', '#006491'],
+    normalizeFunction: 'polynomial'
+});
+</script>
+ 
+<div id="vmap" style="width: 600px; height: 400px; position:absolute; position:centered;" ></div>
+
+
+  <div>
     <%= render 'shared/feed' %>
   </div>
-  
-</div>
 <% end %>
 <% else %>

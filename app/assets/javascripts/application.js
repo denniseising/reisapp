@@ -12,10 +12,36 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require galleria-1.3.5
-//= require galleria.classic
-//
-
-
-
-
+//= require jquery.flexslider
+//= require areacorners.js
+//= require areadata.js
+//= require core.js
+//= require graphics.js
+//= require jquery.imagemapster.js
+//= require jquery.imagemapster.min.js
+//= require license.js
+//= require mapdata.js
+//= require mapimage.js
+//= require scale.js
+//= require textures.js
+//= require tooltip.js
+//= require zepto.js
+//= require jquery.vmap.min.js
+//= require jquery.vmap.packed.js
+//= require mapdata.js
+//= require mapimage.js
+//= require jquery.vmap.js
+//= require jquery.vmap.world.js
+//= require jquery.vmap.sampledata.js
+//= require jquery.vmap.africa.js
+//= require jquery.vmap.algeria.js
+//= require jquery.vmap.asia.js
+//= require jquery.vmap.australia.js
+//= require jquery.vmap.brazil.js
+//= require jquery.vmap.europe.js
+//= require jquery.vmap.france.js
+//= require jquery.vmap.germany.js
+//= require jquery.vmap.north-america.js
+//= require jquery.vmap.russia.js
+//= require jquery.vmap.south-america.js
+//= require jquery.vmap.usa.js

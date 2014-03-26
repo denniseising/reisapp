@@ -1,27 +1,10 @@
 <% if signed_in? %>
 
-<div id="vmap" style="width: 600px; height: 400px;"></div>
- 
-<script>
-jQuery('#vmap').vectorMap({
-    map: 'world_en',
-    backgroundColor: null,
-    color: '#ffffff',
-    hoverOpacity: 0.7,
-    selectedColor: '#666666',
-    enableZoom: false,
-    showTooltip: true,
-    values: sample_data,
-    scaleColors: ['#C8EEFF', '#006491'],
-    normalizeFunction: 'polynomial'
-});
-</script>
- 
-<div id="vmap" style="width: 600px; height: 400px; position:absolute; position:centered;" ></div>
-
+<div id="mapdiv" ></div>
 
   <div>
     <%= render 'shared/feed' %>
   </div>
-<% end %>
+
 <% else %>
+<% end %>

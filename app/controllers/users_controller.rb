@@ -64,3 +64,7 @@ flash[:success] = "Profile updated"
       redirect_to(root_url) unless current_user?(@user)
     end
   end
+
+def search
+  @grants = Grant.search params[:search]
+end

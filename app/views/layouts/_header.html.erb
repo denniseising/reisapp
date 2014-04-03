@@ -1,8 +1,16 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
   <div class="navbar-inner">
     <div class="container">
-      <%= link_to "travelmate", root_path, id: "logo" %>
       <nav>
+        <ul class="nav pull-left">
+        <li><%= form_tag countries_path, class: "form-inline", method: :get do %>
+          <%= text_field_tag :query, params[:query], class: "form-control" %></li>
+          <li><%= submit_tag "Land zoeken", class: "btn btn-primary" %></li>
+          <% if params[:query].present? %>
+            <%= link_to "clear", countries_path %>
+          <% end %>
+        <% end %>
+      </ul>
         <ul class="nav pull-right">
           <li><%= link_to "Wereldkaart", root_path %></li>
           <li><%= link_to "Registreren", signup_path %></li><% if signed_in? %>

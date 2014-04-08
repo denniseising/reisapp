@@ -4,8 +4,6 @@
 
 html {
   overflow-y: scroll;
-
-  background-color: #3F3F4D;
 }
 
 body {
@@ -55,21 +53,8 @@ p {
 }
 
 /* header */
-
-#logo {
-  float: left;
-  margin-right: 10px;
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-  padding-top: 9px;
-  font-weight: bold;
-  line-height: 1;
-}
-
-#logo:hover {
-  color: white;
-  text-decoration: none;
+#navbar{
+background-color:white;
 }
 
 /* footer */
@@ -99,31 +84,6 @@ footer ul {
 footer ul li {
   float: left;
   margin-left: 10px;
-}
-
-/* sidebar */
-
-aside {
-  section {
-    padding: 10px 0;
-    border-top: 1px solid $grayLighter;
-    &:first-child {
-      border: 0;
-      padding-top: 0;
-    }
-    span {
-      display: block;
-      margin-bottom: 3px;
-      line-height: 1;
-    }
-    h1 {
-      font-size: 1.4em;
-      text-align: left;
-      letter-spacing: -1px;
-      margin-bottom: 3px;
-      margin-top: 0px;
-    }
-  }
 }
 
 /* forms */
@@ -173,7 +133,7 @@ input {
   margin: 10px 0 0 0;
 
   li {
-    padding: 10px 0;
+    padding: 10px ;
     border-top: 1px solid #e8e8e8;
   }
 }
@@ -214,7 +174,6 @@ aside {
 @import url(http://fonts.googleapis.com/css?family=Lato:300);
 
 body {
-  background-color: #3F3F4D;
   margin-left: 32px;
   margin-top: 20px;
   margin-right: 20px;
@@ -244,12 +203,10 @@ th{
 }
 
 td{
-  background-color:#ecf7fe;
   text-align:center;
 }
 
 #mapdiv{
-  background-color: #3F3F4D;
   height: 600px;
   width: 100%;
 }
@@ -383,5 +340,7 @@ body{
  .form-inline{
   margin-top: 5px;
   margin-right: 5px;
+  margin-bottom: 0px;
  }
+
 
